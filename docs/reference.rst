@@ -6,8 +6,8 @@ Reference
     :backlinks: none
 
 
-galaxies-datasets.__main__
+galaxies_datasets.__main__
 --------------------------
 
-.. automodule:: galaxies-datasets.__main__
+.. automodule:: galaxies_datasets.__main__
    :members:

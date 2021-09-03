@@ -2,7 +2,7 @@
 import pytest
 from click.testing import CliRunner
 
-from galaxies-datasets import __main__
+from galaxies_datasets import __main__
 
 
 @pytest.fixture

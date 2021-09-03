@@ -6,7 +6,7 @@
   "friendly_name": "Galaxies Datasets",
   "github_user": "lbignone",
   "license": "MIT",
-  "package_name": "galaxies-datasets",
+  "package_name": "galaxies_datasets",
   "project_name": "galaxies_datasets",
   "version": "0.0.0"
 }

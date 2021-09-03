@@ -1,6 +1,6 @@
 Usage
 =====
 
-.. click:: galaxies-datasets.__main__:main
+.. click:: galaxies_datasets.__main__:main
    :prog: galaxies_datasets
    :nested: full

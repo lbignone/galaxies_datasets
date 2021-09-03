@@ -25,10 +25,10 @@ nox.needs_version = ">= 2021.6.6"
 nox.options.sessions = (
     "pre-commit",
     "safety",
-    "mypy",
+    #    "mypy",
     "tests",
-    "typeguard",
-    "xdoctest",
+    #    "typeguard",
+    #    "xdoctest",
     "docs-build",
 )
 
