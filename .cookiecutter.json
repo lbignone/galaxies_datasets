@@ -1,0 +1,12 @@
+{
+  "_template": "gh:cjolowicz/cookiecutter-hypermodern-python",
+  "author": "Lucas Bignone",
+  "development_status": "Development Status :: 1 - Planning",
+  "email": "lbignone@gmail.com",
+  "friendly_name": "Galaxies Datasets",
+  "github_user": "lbignone",
+  "license": "MIT",
+  "package_name": "galaxies-datasets",
+  "project_name": "galaxies_datasets",
+  "version": "0.0.0"
+}
