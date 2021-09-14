@@ -231,16 +231,28 @@ def print_info_message(
     typer.secho(f"User: {user}")
 
 
+user_arg = typer.Argument(..., help="Username for the EAGLE public database")
+simulation_arg = typer.Argument(..., help="Name of the EAGLE simulation")
+start_snap_number_arg = typer.Option(12, help="Starting snapshot to download")
+stop_snap_number_arg = typer.Option(
+    28, help="Stopping (exclusive) snapshot " "to download"
+)
+min_mass_star_arg = typer.Option(
+    1e8, help="Minimum stellar mass of galaxies to download"
+)
+manual_dir_arg = typer.Option(None, "--manual_dir", help="Where to download data.")
+
+
 @app.command()
 def download(
-    user: str,
-    simulation: str,
-    start_snap_number: int = 12,
-    stop_snap_number: int = 28,
-    min_mass_star: float = 1e8,
-    manual_dir: Optional[pathlib.Path] = None,
+    user: str = user_arg,
+    simulation: str = simulation_arg,
+    start_snap_number: int = start_snap_number_arg,
+    stop_snap_number: int = stop_snap_number_arg,
+    min_mass_star: float = min_mass_star_arg,
+    manual_dir: pathlib.Path = manual_dir_arg,
 ) -> None:
-    """Download data and images for the EAGLE simulation."""
+    """Download images and data from the EAGLE simulation public database."""
     print_info_message(
         user, simulation, start_snap_number, stop_snap_number, min_mass_star, manual_dir
     )
