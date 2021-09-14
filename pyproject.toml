@@ -55,7 +55,7 @@ sphinx-click = "^3.0.1"
 Pygments = "^2.9.0"
 
 [tool.poetry.scripts]
-galaxies_datasets = "galaxies_datasets.__main__:cli"
+galaxies_datasets = "galaxies_datasets.__main__:app"
 
 [tool.coverage.paths]
 source = ["src", "*/site-packages"]

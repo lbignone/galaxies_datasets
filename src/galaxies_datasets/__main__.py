@@ -1,11 +1,9 @@
 """Command-line interface."""
+import typer
+
 from galaxies_datasets.scripts import app
 
-
-def cli():
-    """Start cli."""
-    app()
-
+typer_click_object = typer.main.get_command(app)
 
 if __name__ == "__main__":
-    cli()
+    app()
