@@ -1,12 +1,11 @@
 """Command-line interface."""
-import click
+from galaxies_datasets.scripts import app
 
 
-@click.command()
-@click.version_option()
-def main() -> None:
-    """Galaxies Datasets."""
+def cli():
+    """Start cli."""
+    app()
 
 
 if __name__ == "__main__":
-    main(prog_name="galaxies_datasets")  # pragma: no cover
+    cli()
