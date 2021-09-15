@@ -264,7 +264,9 @@ def download(
         download_and_save_data(
             connection, simulation, snap_number, min_mass_star, manual_dir
         )
-        for orientation in EagleOrientation:
+        orientation_pbar = tqdm(EagleOrientation)
+        for orientation in orientation_pbar:
+            orientation_pbar.set_description(f"Orientation {orientation.value}")
             download_images(simulation, snap_number, orientation, manual_dir)
 
 
