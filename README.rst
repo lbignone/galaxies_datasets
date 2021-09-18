@@ -36,16 +36,32 @@ Galaxies Datasets
    :alt: Black
 
 
-Features
---------
+*Galaxies Datasets* is a collection of ready-to-use extragalactic astronomy datasets
+for use with TensorFlow, Jax, and other Machine Learning frameworks.
 
-* TODO
+It follows the `tensorflow_datasets`_ framework, making it very easy to switch
+between different datasets. All datasets are exposed as `tf.data.Datasets`_, enabling
+easy-to-use and high-performance input pipelines.
 
+Loading a dataset can be as easy as::
 
-Requirements
-------------
+    from galaxies_datasets import datasets
+    import tensorflow_datasets as tfds
 
-* TODO
+    # Construct a tf.data.Dataset
+    ds = tfds.load("galaxy_zoo_challenge", split="train")
+
+Currently available datasets focus on galaxy morphology.
+
+They include observational data from the `galazy zoo project`_:
+
+- galaxy_zoo_challenge
+- galaxy_zoo_2
+- galaxy_zoo_decals
+
+As well as mock galaxy images from the `EAGLE simulation`_:
+
+- eagle
 
 
 Installation
@@ -61,7 +77,42 @@ You can install *Galaxies Datasets* via pip_ from PyPI_:
 Usage
 -----
 
-Please see the `Command-line Reference <Usage_>`_ for details.
+In the example above ::
+
+    from galaxies_datasets import datasets
+
+registers the collection of galactic datasets with the `tensorflow_datasets`_ package
+making them available through its API. And that is it! ...Almost.
+
+For more details on tensorflow_datasets check out the `documentation`_.
+
+Some datasets require that you first manually download data. Check :ref:`each
+dataset<Dataset catalog>` for instructions.
+
+Scripts
+-------
+
+*Galaxies Datasets* provides some scripts to download and prepare data. The scripts
+are available through a command-line interface powered by `Typer`_.
+
+For example, to download images and data from the EAGLE simulation you could simply do::
+
+    galaxies_datasets eagle download USER SIMULATION
+
+where USER is your username for the EAGLE public database and SIMULATION is the name
+of one of the EAGLE simulations.
+
+For all available commands check the `Command-line Interface`_ reference, or run::
+
+    galaxies_datasets --help
+
+The command-line interface also supports automatic completion in all operating
+systems, in all the shells (Bash, Zsh, Fish, PowerShell), so that you can just hit
+TAB and get the available options or subcommands.
+
+To install automatic completion in bash run::
+
+    galaxies_datasets --install-completion bash
 
 
 Contributing
@@ -85,18 +136,22 @@ If you encounter any problems,
 please `file an issue`_ along with a detailed description.
 
 
-Credits
--------
+Disclaimer
+----------
 
-This project was generated from `@cjolowicz`_'s `Hypermodern Python Cookiecutter`_ template.
 
-.. _@cjolowicz: https://github.com/cjolowicz
-.. _Cookiecutter: https://github.com/audreyr/cookiecutter
 .. _MIT license: https://opensource.org/licenses/MIT
 .. _PyPI: https://pypi.org/
 .. _Hypermodern Python Cookiecutter: https://github.com/cjolowicz/cookiecutter-hypermodern-python
 .. _file an issue: https://github.com/lbignone/galaxies_datasets/issues
 .. _pip: https://pip.pypa.io/
+.. _tensorflow_datasets: https://www.tensorflow.org/datasets/
+.. _tf.data.Datasets: https://www.tensorflow.org/api_docs/python/tf/data/Dataset
+.. _documentation: https://www.tensorflow.org/datasets/overview
+.. _galazy zoo project: https://www.zooniverse.org/projects/zookeeper/galaxy-zoo/
+.. _EAGLE simulation: http://icc.dur.ac.uk/Eagle/
+.. _Typer: https://typer.tiangolo.com/
 .. github-only
 .. _Contributor Guide: CONTRIBUTING.rst
+.. _Command-line Interface: cli.rst
 .. _Usage: https://galaxies_datasets.readthedocs.io/en/latest/usage.html

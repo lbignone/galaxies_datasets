@@ -2,14 +2,13 @@
    :end-before: github-only
 
 .. _Contributor Guide: contributing.html
-.. _Usage: usage.html
+.. _Command-line Interface: cli.html
 
 .. toctree::
    :hidden:
    :maxdepth: 1
 
-   usage
-   reference
+   Command-line interface <cli>
    contributing
    Code of Conduct <codeofconduct>
    License <license>
