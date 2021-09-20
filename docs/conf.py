@@ -15,3 +15,7 @@ extensions = [
 ]
 autodoc_typehints = "description"
 html_theme = "sphinx_rtd_theme"
+html_favicon = "favicon.png"
+html_theme_options = {
+    "style_external_links": False,
+}

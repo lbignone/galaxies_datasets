@@ -1,6 +1,11 @@
 Galaxies Datasets
 =================
 
+|header|
+
+.. |header| image:: header.png
+   :alt: Galaxies Datasets
+
 |PyPI| |Status| |Python Version| |License|
 
 |Read the Docs| |Tests| |Codecov|
@@ -43,6 +48,10 @@ It follows the `tensorflow_datasets`_ framework, making it very easy to switch
 between different datasets. All datasets are exposed as `tf.data.Datasets`_, enabling
 easy-to-use and high-performance input pipelines.
 
+
+Usage
+-----
+
 Loading a dataset can be as easy as::
 
     from galaxies_datasets import datasets
@@ -51,7 +60,26 @@ Loading a dataset can be as easy as::
     # Construct a tf.data.Dataset
     ds = tfds.load("galaxy_zoo_challenge", split="train")
 
-Currently available datasets focus on galaxy morphology.
+    # Build your input pipeline
+    ds = ds.shuffle(1000).batch(128).prefetch(10).take(5)
+
+In the example above ::
+
+    from galaxies_datasets import datasets
+
+registers the collection of galactic datasets with the `tensorflow_datasets`_ package
+making them available through its API. And that is it! ...Almost.
+
+For more details on tensorflow_datasets check out the `documentation`_.
+
+Some datasets require that you first manually download data. Check :ref:`each
+dataset<Datasets>` for instructions.
+
+
+Datasets
+--------
+
+Currently `available datasets`_ focus on galaxy morphology.
 
 They include observational data from the `galazy zoo project`_:
 
@@ -73,21 +101,6 @@ You can install *Galaxies Datasets* via pip_ from PyPI_:
 
    $ pip install galaxies_datasets
 
-
-Usage
------
-
-In the example above ::
-
-    from galaxies_datasets import datasets
-
-registers the collection of galactic datasets with the `tensorflow_datasets`_ package
-making them available through its API. And that is it! ...Almost.
-
-For more details on tensorflow_datasets check out the `documentation`_.
-
-Some datasets require that you first manually download data. Check :ref:`each
-dataset<Dataset catalog>` for instructions.
 
 Scripts
 -------
@@ -139,7 +152,27 @@ please `file an issue`_ along with a detailed description.
 Disclaimer
 ----------
 
+This is a utility library that downloads and prepares datasets. We do not host
+or distribute these datasets, vouch for their quality or fairness, or claim that you
+have license to use the dataset. It is your responsibility to determine whether you
+have permission to use the dataset under the dataset's license.
 
+If you're a dataset owner and wish to update any part of it (description, citation,
+etc.), or do not want your dataset to be included in this library, please get in
+touch through a GitHub issue. Thanks for your contribution to the ML community!
+
+
+Credits
+-------
+
+This project was generated from `@cjolowicz`_'s `Hypermodern Python Cookiecutter`_
+template.
+
+Icons made by `Freepik <https://www.freepik.com>`_ from `www.flaticon.com
+<https://www.flaticon.com/>`_
+
+
+.. _@cjolowicz: https://github.com/cjolowicz
 .. _MIT license: https://opensource.org/licenses/MIT
 .. _PyPI: https://pypi.org/
 .. _Hypermodern Python Cookiecutter: https://github.com/cjolowicz/cookiecutter-hypermodern-python
@@ -152,6 +185,7 @@ Disclaimer
 .. _EAGLE simulation: http://icc.dur.ac.uk/Eagle/
 .. _Typer: https://typer.tiangolo.com/
 .. github-only
+.. _available datasets: docs/datasets.md
 .. _Contributor Guide: CONTRIBUTING.rst
 .. _Command-line Interface: cli.rst
 .. _Usage: https://galaxies_datasets.readthedocs.io/en/latest/usage.html
