@@ -1,6 +1,7 @@
 """Build catalog script."""
 import inspect
 import pathlib
+import textwrap
 from importlib import resources
 from typing import List
 from typing import Optional
@@ -29,10 +30,10 @@ def empty_string_for_none(string: Optional[str]):
 def get_documentation_info(builder: tfds.core.DatasetBuilder) -> dict:
     """Return a dictionary containing the data to pass to the documentation template."""
     d = {
-        "description": builder.info.description,
+        "description": textwrap.dedent(builder.info.description),
         "homepage": empty_string_for_none(builder.info.homepage),
-        "MANUAL_DOWNLOAD_INSTRUCTIONS": empty_string_for_none(
-            builder.MANUAL_DOWNLOAD_INSTRUCTIONS
+        "MANUAL_DOWNLOAD_INSTRUCTIONS": textwrap.dedent(
+            empty_string_for_none(builder.MANUAL_DOWNLOAD_INSTRUCTIONS)
         ),
     }
 
@@ -97,7 +98,7 @@ def build_catalog(
 
     documentation = get_catalog_documentation(builders)
 
-    with open(build_dir / "catalog.md", "w") as f:
+    with open(build_dir / "datasets.md", "w") as f:
         f.write(documentation)
 
 

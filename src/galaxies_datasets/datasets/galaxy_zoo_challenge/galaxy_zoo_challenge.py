@@ -101,12 +101,14 @@ class GalaxyZooChallenge(tfds.core.GeneratorBasedBuilder):
     }
 
     MANUAL_DOWNLOAD_INSTRUCTIONS = f"""
-  Download the folowing files from {_URL}:
+    Download the following files from the [Kaggle competition site]({_URL}):
+
     - images_training_rev1.zip
     - images_test_rev1.zip
     - training_solutions_rev1.zip
-  Extract them in `manual_dir/galaxy_zoo_challenge`
-  """
+
+    Extract them in `manual_dir/galaxy_zoo_challenge`
+    """
 
     BUILDER_CONFIGS = [
         # `name` (and optionally `description`) are required for each config

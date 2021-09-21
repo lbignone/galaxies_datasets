@@ -52,7 +52,9 @@ easy-to-use and high-performance input pipelines.
 Usage
 -----
 
-Loading a dataset can be as easy as::
+Loading a dataset can be as easy as:
+
+.. code-block:: python
 
     from galaxies_datasets import datasets
     import tensorflow_datasets as tfds
@@ -63,7 +65,9 @@ Loading a dataset can be as easy as::
     # Build your input pipeline
     ds = ds.shuffle(1000).batch(128).prefetch(10).take(5)
 
-In the example above ::
+In the example above:
+
+.. code-block:: python
 
     from galaxies_datasets import datasets
 
@@ -72,8 +76,8 @@ making them available through its API. And that is it! ...Almost.
 
 For more details on tensorflow_datasets check out the `documentation`_.
 
-Some datasets require that you first manually download data. Check :ref:`each
-dataset<Datasets>` for instructions.
+Some datasets require that you first manually download data. Check each dataset for
+instructions.
 
 
 Datasets
@@ -81,10 +85,10 @@ Datasets
 
 Currently `available datasets`_ focus on galaxy morphology.
 
-They include observational data from the `galazy zoo project`_:
+They include observational data from the `Galaxy zoo project`_:
 
 - galaxy_zoo_challenge
-- galaxy_zoo_2
+- galaxy_zoo2
 - galaxy_zoo_decals
 
 As well as mock galaxy images from the `EAGLE simulation`_:
@@ -181,7 +185,7 @@ Icons made by `Freepik <https://www.freepik.com>`_ from `www.flaticon.com
 .. _tensorflow_datasets: https://www.tensorflow.org/datasets/
 .. _tf.data.Datasets: https://www.tensorflow.org/api_docs/python/tf/data/Dataset
 .. _documentation: https://www.tensorflow.org/datasets/overview
-.. _galazy zoo project: https://www.zooniverse.org/projects/zookeeper/galaxy-zoo/
+.. _Galaxy zoo project: https://www.zooniverse.org/projects/zookeeper/galaxy-zoo/
 .. _EAGLE simulation: http://icc.dur.ac.uk/Eagle/
 .. _Typer: https://typer.tiangolo.com/
 .. github-only

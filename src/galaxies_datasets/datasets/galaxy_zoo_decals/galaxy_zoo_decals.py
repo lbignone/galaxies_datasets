@@ -216,15 +216,18 @@ class GalaxyZooDecals(tfds.core.GeneratorBasedBuilder):
     }
 
     MANUAL_DOWNLOAD_INSTRUCTIONS = """
-    Download from https://zenodo.org/record/4573248#.YSEdzPfQ_mg the
+    Download from this [Zenodo
+    repository](https://zenodo.org/record/4573248#.YSEdzPfQ_mg) the
     following three csv files and place them in `manual_dir/galaxy_zoo_decals`
-        - gz_decals_volunteers_1_and_2.csv
-        - gz_decals_volunteers_5.csv
-        - gz_decals_auto_posteriors.csv
+
+    - gz_decals_volunteers_1_and_2.csv
+    - gz_decals_volunteers_5.csv
+    - gz_decals_auto_posteriors.csv
 
     Also download all four gz_decals_dr5_png_part*.zip files and extract
     them in `manual_dir/galaxy_zoo_decals`. You should end up with with
     four folders structured like this:
+
         gz_decals_dr5_png_part*.zip/J*/J*.png
     """
 

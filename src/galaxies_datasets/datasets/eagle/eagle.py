@@ -5,8 +5,8 @@ import tensorflow as tf
 import tensorflow_datasets as tfds
 
 _DESCRIPTION = """
-This dataset contains mock galaxy images generated from the EAGLE collection of
-hydrodynamic cosmological simulations (http://icc.dur.ac.uk/Eagle/).
+This dataset contains mock galaxy images generated from the [EAGLE collection of
+hydrodynamic cosmological simulations](http://icc.dur.ac.uk/Eagle/).
 
 Images are 256x256x3 pngs in three orientation: edge-on, face-on and box, ie.
 aligned with the xy projection of the simulation box.
@@ -92,9 +92,13 @@ class Eagle(tfds.core.GeneratorBasedBuilder):
 
     MANUAL_DOWNLOAD_INSTRUCTIONS = """
     Galaxies_datasets has a dedicated script to download EAGLE data.
+
     Usage:
+
         galaxies_datasets eagle download [OPTIONS] USER SIMULATION
+
     For more information and additional options run:
+
         galaxies_datasets eagle download --help
     """
 

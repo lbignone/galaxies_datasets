@@ -9,7 +9,7 @@ _URL_GZ = "https://data.galaxyzoo.org/"
 _DESCRIPTION = f"""
 Dataset containing images from the "original" sample of subject images in
 Galaxy Zoo 2 and morphological classification from Hart et al. (2016).
-Images are obtained from {_URL} and
+Images are obtained from [this repository]({_URL}) and
 the morhological classification from "GZ2 - Table 1 - Normal-depth sample
 with new debiasing method – CSV" (from Hart et al. 2016), which is available at
 [data.galaxyzoo.org]({_URL_GZ})
@@ -222,13 +222,17 @@ class GalaxyZoo2(tfds.core.GeneratorBasedBuilder):
     }
 
     MANUAL_DOWNLOAD_INSTRUCTIONS = f"""
-  Download from {_URL} files:
+    Download from [this Zenodo repository]({_URL}) files:
+
     - gz2_filename_mapping.csv
     - images_gz2.zip
-  Download from {_URL_GZ} file:
+
+    Download from the [galaxy zoo data site]({_URL_GZ}) file:
+
     - gz2_hart16.csv
-  Extract them in `manual_dir/galaxy_zoo_2`.
-  """
+
+    Extract them in `manual_dir/galaxy_zoo_2`.
+    """
 
     def _info(self) -> tfds.core.DatasetInfo:
         """Returns the dataset metadata."""
