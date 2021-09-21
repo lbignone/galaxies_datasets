@@ -10,3 +10,4 @@
 __pycache__/
 /src/galaxies_datasets/.pytest_cache/
 .idea/
+/poetry.lock
