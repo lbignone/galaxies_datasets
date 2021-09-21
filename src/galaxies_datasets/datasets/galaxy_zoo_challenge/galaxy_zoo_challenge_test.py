@@ -1,7 +1,7 @@
 """galaxy_zoo_challenge dataset."""
 import tensorflow_datasets as tfds
 
-from galaxies_datasets.galaxy_zoo_challenge import galaxy_zoo_challenge
+from . import galaxy_zoo_challenge
 
 
 class GalaxyZooChallengeTest(tfds.testing.DatasetBuilderTestCase):

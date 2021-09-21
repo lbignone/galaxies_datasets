@@ -1,7 +1,7 @@
 """galaxy_zoo_decals dataset."""
 import tensorflow_datasets as tfds
 
-from galaxies_datasets.galaxy_zoo_decals import galaxy_zoo_decals
+from . import galaxy_zoo_decals
 
 
 class GalaxyZooDecalsTest(tfds.testing.DatasetBuilderTestCase):
