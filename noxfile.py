@@ -20,7 +20,7 @@ except ImportError:
 
 
 package = "galaxies_datasets"
-python_versions = ["3.9", "3.8", "3.7", "3.6"]
+python_versions = ["3.9", "3.8", "3.7"]
 nox.needs_version = ">= 2021.6.6"
 nox.options.sessions = (
     "pre-commit",
@@ -172,7 +172,7 @@ def docs_build(session: Session) -> None:
     """Build the documentation."""
     args = session.posargs or ["docs", "docs/_build"]
     session.install(".")
-    session.install("sphinx", "sphinx-click", "sphinx-rtd-theme")
+    session.install("sphinx", "sphinx-click", "sphinx-rtd-theme", "myst-parser")
 
     build_dir = Path("docs", "_build")
     if build_dir.exists():
