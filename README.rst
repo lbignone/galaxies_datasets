@@ -6,10 +6,7 @@ Galaxies Datasets
 .. |header| image:: header.png
    :alt: Galaxies Datasets
 
-|PyPI| |Status| |Python Version| |License|
-
-|Read the Docs| |Tests| |Codecov|
-
+|PyPI| |Status| |Python Version| |License| |Read the Docs| |Tests| |Codecov|
 |pre-commit| |Black| |DOI|
 
 .. |PyPI| image:: https://img.shields.io/pypi/v/galaxies_datasets.svg
@@ -21,6 +18,7 @@ Galaxies Datasets
 .. |Python Version| image:: https://img.shields.io/pypi/pyversions/galaxies_datasets
    :target: https://pypi.org/project/galaxies_datasets
    :alt: Python Version
+
 .. |License| image:: https://img.shields.io/pypi/l/galaxies_datasets
    :target: https://opensource.org/licenses/MIT
    :alt: License
@@ -30,6 +28,7 @@ Galaxies Datasets
 .. |Tests| image:: https://github.com/lbignone/galaxies_datasets/workflows/Tests/badge.svg
    :target: https://github.com/lbignone/galaxies_datasets/actions?workflow=Tests
    :alt: Tests
+
 .. |Codecov| image:: https://codecov.io/gh/lbignone/galaxies_datasets/branch/main/graph/badge.svg
    :target: https://codecov.io/gh/lbignone/galaxies_datasets
    :alt: Codecov
