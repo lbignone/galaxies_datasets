@@ -106,7 +106,7 @@ You can install *Galaxies Datasets* via pip_ from PyPI_:
 
 .. code:: console
 
-   $ pip install galaxies_datasets
+   $ pip install galaxies-datasets
 
 
 Scripts
