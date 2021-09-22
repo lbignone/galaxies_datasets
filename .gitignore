@@ -10,3 +10,5 @@
 __pycache__/
 /src/galaxies_datasets/.pytest_cache/
 .idea/
+/src/galaxies_datasets/datasets/.pytest_cache/
+/tests/.pytest_cache/
