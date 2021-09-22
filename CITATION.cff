@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+  - family-names: Bignone
+    given-names: Lucas
+    orcid: https://orcid.org/0000-0003-4925-7248
+title: "Galaxies Datasets"
+version: 0.1.1
+doi: 10.5281/zenodo.5521450
+date-released: 2021-08-11
+repository-code: https://github.com/lbignone/galaxies_datasets

@@ -10,7 +10,7 @@ Galaxies Datasets
 
 |Read the Docs| |Tests| |Codecov|
 
-|pre-commit| |Black|
+|pre-commit| |Black| |DOI|
 
 .. |PyPI| image:: https://img.shields.io/pypi/v/galaxies_datasets.svg
    :target: https://pypi.org/project/galaxies_datasets/
@@ -39,6 +39,9 @@ Galaxies Datasets
 .. |Black| image:: https://img.shields.io/badge/code%20style-black-000000.svg
    :target: https://github.com/psf/black
    :alt: Black
+.. |DOI| image:: https://zenodo.org/badge/DOI/10.5281/zenodo.5521450.svg
+   :target: https://doi.org/10.5281/zenodo.5521450
+   :alt: DOI
 
 
 *Galaxies Datasets* is a collection of ready-to-use extragalactic astronomy datasets
@@ -130,6 +133,26 @@ TAB and get the available options or subcommands.
 To install automatic completion in bash run::
 
     galaxies_datasets --install-completion bash
+
+
+Citation
+--------
+
+If you use this software, please cite it as below, in addition to any citation
+specific to the used datasets.
+
+.. code:: bibtex
+
+    @software{lucas_bignone_2021_5521451,
+        author       = {Lucas Bignone},
+        title        = {Galaxies Datasets},
+        month        = sep,
+        year         = 2021,
+        publisher    = {Zenodo},
+        version      = {v0.1.1},
+        doi          = {10.5281/zenodo.5521450},
+        url          = {https://doi.org/10.5281/zenodo.5521450}
+    }
 
 
 Contributing
