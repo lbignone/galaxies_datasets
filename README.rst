@@ -6,7 +6,7 @@ Galaxies Datasets
 .. |header| image:: header.png
    :alt: Galaxies Datasets
 
-|PyPI| |Status| |Python Version| |License| |Read the Docs| |Tests| |Codecov|
+|PyPI| |Status| |Python Version| |License| |Read the Docs| |Tests|
 |pre-commit| |Black| |DOI|
 
 .. |PyPI| image:: https://img.shields.io/pypi/v/galaxies_datasets.svg
