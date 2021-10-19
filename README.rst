@@ -213,5 +213,5 @@ Icons made by `Freepik <https://www.freepik.com>`_ from `www.flaticon.com
 .. github-only
 .. _available datasets: docs/datasets.md
 .. _Contributor Guide: CONTRIBUTING.rst
-.. _Command-line Interface: cli.rst
+.. _Command-line Interface: https://galaxies-datasets.readthedocs.io/en/latest/cli.html
 .. _Usage: https://galaxies_datasets.readthedocs.io/en/latest/usage.html
