@@ -975,7 +975,7 @@ python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
 
 [[package]]
 name = "pygments"
-version = "2.10.0"
+version = "2.11.1"
 description = "Pygments is a syntax highlighting package written in Python."
 category = "dev"
 optional = false
@@ -1370,7 +1370,7 @@ python-versions = "*"
 
 [[package]]
 name = "tensorflow"
-version = "2.6.0"
+version = "2.6.2"
 description = "TensorFlow is an open source machine learning framework for everyone."
 category = "main"
 optional = false
@@ -1385,14 +1385,14 @@ gast = "0.4.0"
 google-pasta = ">=0.2,<1.0"
 grpcio = ">=1.37.0,<2.0"
 h5py = ">=3.1.0,<3.2.0"
-keras = ">=2.6,<3.0"
+keras = ">=2.6.0,<2.7"
 keras-preprocessing = ">=1.1.2,<1.2.0"
 numpy = ">=1.19.2,<1.20.0"
 opt-einsum = ">=3.3.0,<3.4.0"
 protobuf = ">=3.9.2"
 six = ">=1.15.0,<1.16.0"
-tensorboard = ">=2.6,<3.0"
-tensorflow-estimator = ">=2.6,<3.0"
+tensorboard = ">=2.6.0,<2.7"
+tensorflow-estimator = ">=2.6.0,<2.7"
 termcolor = ">=1.1.0,<1.2.0"
 typing-extensions = ">=3.7.4,<3.8.0"
 wrapt = ">=1.12.1,<1.13.0"
@@ -1650,7 +1650,7 @@ testing = ["pytest (>=4.6)", "pytest-checkdocs (>=2.4)", "pytest-flake8", "pytes
 [metadata]
 lock-version = "1.1"
 python-versions = ">=3.7.1,<4.0.0"
-content-hash = "b0f56063be4dd205dc5b9b3b9f8c6b02a3912e12feaf8d0bf62469231ca4a3ee"
+content-hash = "121701a52f7bad1c47ac7c0b05ec7e01860b8c5980a725075564e103284881d4"
 
 [metadata.files]
 absl-py = [
@@ -2260,8 +2260,8 @@ pyflakes = [
     {file = "pyflakes-2.4.0.tar.gz", hash = "sha256:05a85c2872edf37a4ed30b0cce2f6093e1d0581f8c19d7393122da7e25b2b24c"},
 ]
 pygments = [
-    {file = "Pygments-2.10.0-py3-none-any.whl", hash = "sha256:b8e67fe6af78f492b3c4b3e2970c0624cbf08beb1e493b2c99b9fa1b67a20380"},
-    {file = "Pygments-2.10.0.tar.gz", hash = "sha256:f398865f7eb6874156579fdf36bc840a03cab64d1cde9e93d68f46a425ec52c6"},
+    {file = "Pygments-2.11.1-py3-none-any.whl", hash = "sha256:9135c1af61eec0f650cd1ea1ed8ce298e54d56bcd8cc2ef46edd7702c171337c"},
+    {file = "Pygments-2.11.1.tar.gz", hash = "sha256:59b895e326f0fb0d733fd28c6839bd18ad0687ba20efc26d4277fd1d30b971f4"},
 ]
 pyparsing = [
     {file = "pyparsing-2.4.7-py2.py3-none-any.whl", hash = "sha256:ef9d7589ef3c200abe66653d3f1ab1033c3c419ae9b9bdb1240a85b024efc88b"},
@@ -2476,18 +2476,18 @@ tensorboard-plugin-wit = [
     {file = "tensorboard_plugin_wit-1.8.0-py3-none-any.whl", hash = "sha256:2a80d1c551d741e99b2f197bb915d8a133e24adb8da1732b840041860f91183a"},
 ]
 tensorflow = [
-    {file = "tensorflow-2.6.0-cp36-cp36m-macosx_10_11_x86_64.whl", hash = "sha256:c67fad296a3a2133b7a14da5f06c9937e7911b02c5d7a3ff6ba52a1d79b6bc9e"},
-    {file = "tensorflow-2.6.0-cp36-cp36m-manylinux2010_x86_64.whl", hash = "sha256:8b5ce09ede0fe45ef100f4dc65cf3f46722194e75139f85d524058315e2ce9fa"},
-    {file = "tensorflow-2.6.0-cp36-cp36m-win_amd64.whl", hash = "sha256:dea97f664246e185d79cbe40a86309527affd4232f06afa8a6500c4fc4b64a03"},
-    {file = "tensorflow-2.6.0-cp37-cp37m-macosx_10_11_x86_64.whl", hash = "sha256:4716c9b25a61a2c79b1f253d1e114f1f8679241559c13ad18c657c626a7d5924"},
-    {file = "tensorflow-2.6.0-cp37-cp37m-manylinux2010_x86_64.whl", hash = "sha256:e45e026a9d08c89cecc1160d8248135e2fb79bdc3267328399e1fb25ce583bd6"},
-    {file = "tensorflow-2.6.0-cp37-cp37m-win_amd64.whl", hash = "sha256:6e38b6969414d16afc560c58ca34e1328cc0a5dbd644b64e060f5be8a6653274"},
-    {file = "tensorflow-2.6.0-cp38-cp38-macosx_10_11_x86_64.whl", hash = "sha256:2a067d22a356c2cd4753bdd16ee492c55a610f5ebc52713e2954c642f070321c"},
-    {file = "tensorflow-2.6.0-cp38-cp38-manylinux2010_x86_64.whl", hash = "sha256:2c9b8c6adc060acfcf805a2ea501db0124b679d95b522fd5983a4c110e8e0264"},
-    {file = "tensorflow-2.6.0-cp38-cp38-win_amd64.whl", hash = "sha256:d6468e05552720100e8f94097feb770de320e4c8c244323a8746bd84e5ba4052"},
-    {file = "tensorflow-2.6.0-cp39-cp39-macosx_10_11_x86_64.whl", hash = "sha256:00b1af0a0c5c102db19caceffac4bd4e6c536e6d7512144c241a4ace4428e7c6"},
-    {file = "tensorflow-2.6.0-cp39-cp39-manylinux2010_x86_64.whl", hash = "sha256:bc73ebdd30c48cfc27ba307271117e6dbb795b37396ed817b2fec9393380b115"},
-    {file = "tensorflow-2.6.0-cp39-cp39-win_amd64.whl", hash = "sha256:bfb255c2b0400bc5b4060dda098d46cd7ddeb53b7cbac1dfa29435612cba828c"},
+    {file = "tensorflow-2.6.2-cp36-cp36m-macosx_10_11_x86_64.whl", hash = "sha256:9c85ba08cd08dbf3ba09720e03672da3ccdf969377be85d03bc24b5fe3ca8c21"},
+    {file = "tensorflow-2.6.2-cp36-cp36m-manylinux2010_x86_64.whl", hash = "sha256:423e814557ddd1562a01a78925362bb25b47bafd4f840f22dae34033945beffd"},
+    {file = "tensorflow-2.6.2-cp36-cp36m-win_amd64.whl", hash = "sha256:22b88b00d74774ee1ffd22e504b37ae9af512aff804d26652d2497687830525f"},
+    {file = "tensorflow-2.6.2-cp37-cp37m-macosx_10_11_x86_64.whl", hash = "sha256:16dc1ee49dd8b761577f8abd914a2836647de393b17fe140885f72acd8483e96"},
+    {file = "tensorflow-2.6.2-cp37-cp37m-manylinux2010_x86_64.whl", hash = "sha256:902b233337538e89752f019b3c16b23dff4915f6d3666c35ec029ab4641e9f1c"},
+    {file = "tensorflow-2.6.2-cp37-cp37m-win_amd64.whl", hash = "sha256:e12e70b768e2f1901e69367fae94ac78b0f524019ea439ab849dd2afadcd6450"},
+    {file = "tensorflow-2.6.2-cp38-cp38-macosx_10_11_x86_64.whl", hash = "sha256:caffa6d919b428901e224f778206d5bac4b553dadc1301409781af971b06e000"},
+    {file = "tensorflow-2.6.2-cp38-cp38-manylinux2010_x86_64.whl", hash = "sha256:6da1ca578c061d6072829777d121a0b755d3d50770b4ea3879cdb5eba28dee03"},
+    {file = "tensorflow-2.6.2-cp38-cp38-win_amd64.whl", hash = "sha256:2c9c4506cc8bb5cdd25a9b5046fbdc91dd29ba931f55c98a126f33a9c86668f1"},
+    {file = "tensorflow-2.6.2-cp39-cp39-macosx_10_11_x86_64.whl", hash = "sha256:50e216f3c8512d27d41d24b8990faa2d8a408196cf53342703c26ff5e2cf0ab0"},
+    {file = "tensorflow-2.6.2-cp39-cp39-manylinux2010_x86_64.whl", hash = "sha256:ec08a181a587504ccde13960d47a687e8155c4d1f24750801db9da41d95e7722"},
+    {file = "tensorflow-2.6.2-cp39-cp39-win_amd64.whl", hash = "sha256:b57cebd87d31de8ebd200ad5957d7b54145eafb650f7d8aaf21e89718bade50a"},
 ]
 tensorflow-datasets = [
     {file = "tensorflow-datasets-4.4.0.tar.gz", hash = "sha256:3e95a61dec1fdb7b05dabc0dbed1b531e13d6c6fd362411423d0a775e5e9b960"},
