@@ -92,6 +92,7 @@ They include observational data from the `Galaxy zoo project`_:
 - galaxy_zoo_challenge
 - galaxy_zoo2
 - galaxy_zoo_decals
+- galaxy_zoo3d
 
 As well as mock galaxy images from the `EAGLE simulation`_:
 
