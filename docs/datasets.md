@@ -61,6 +61,26 @@ Download from the [galaxy zoo data site](https://data.galaxyzoo.org/) file:
 
 Extract them in `manual_dir/galaxy_zoo_2`.
 
+## galaxy_zoo3d
+
+**Description**:
+
+Dataset containing crowd sourced spatial pixel (spaxel) maps identifying galaxy
+centres, foreground stars, galactic bars and spiral arms in all galaxies in the
+target file for the MaNGA survey. Data comes from the "Galaxy Zoo: 3D" project (
+Masters et al. 2021).
+
+**Homepage**: [
+https://www.sdss.org/dr17/data_access/value-added-catalogs/?vac_id=galaxy-zoo-3d
+](https://www.sdss.org/dr17/data_access/value-added-catalogs/?vac_id=galaxy-zoo-3d)
+
+**Manual download instructions**:
+GalaxyZoo3d has a dedicated script to download data.
+
+Usage:
+
+    galaxies_datasets galaxy_zoo3d download
+
 ## galaxy_zoo_challenge
 
 **Description**:
