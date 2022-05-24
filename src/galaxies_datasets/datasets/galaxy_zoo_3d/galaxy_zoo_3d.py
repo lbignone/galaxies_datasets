@@ -52,6 +52,8 @@ _CITATION = """
 }
 """
 
+_IMAGE_WIDTH = 525
+
 
 class GalaxyZoo3d(tfds.core.GeneratorBasedBuilder):
     """DatasetBuilder for galaxy_zoo_3d dataset."""
@@ -78,18 +80,18 @@ class GalaxyZoo3d(tfds.core.GeneratorBasedBuilder):
                 {
                     # These are the features of your dataset like images, labels ...
                     "mangaid": tfds.features.Text(),
-                    "image": tfds.features.Image(shape=(None, None, 3)),
+                    "image": tfds.features.Image(shape=(_IMAGE_WIDTH, _IMAGE_WIDTH, 3)),
                     "center_mask": tfds.features.Image(
-                        shape=(None, None, 1), dtype=tf.float32
+                        shape=(_IMAGE_WIDTH, _IMAGE_WIDTH, 1), dtype=tf.float32
                     ),
                     "stars_mask": tfds.features.Image(
-                        shape=(None, None, 1), dtype=tf.float32
+                        shape=(_IMAGE_WIDTH, _IMAGE_WIDTH, 1), dtype=tf.float32
                     ),
                     "spiral_mask": tfds.features.Image(
-                        shape=(None, None, 1), dtype=tf.float32
+                        shape=(_IMAGE_WIDTH, _IMAGE_WIDTH, 1), dtype=tf.float32
                     ),
                     "bar_mask": tfds.features.Image(
-                        shape=(None, None, 1), dtype=tf.float32
+                        shape=(_IMAGE_WIDTH, _IMAGE_WIDTH, 1), dtype=tf.float32
                     ),
                 }
             ),
