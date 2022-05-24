@@ -66,7 +66,7 @@ class GalaxyZoo3d(tfds.core.GeneratorBasedBuilder):
 
       Usage:
 
-          galaxies_datasets galaxyzoo3d download
+          galaxies_datasets galaxy_zoo3d download
       """
 
     def _info(self) -> tfds.core.DatasetInfo:
