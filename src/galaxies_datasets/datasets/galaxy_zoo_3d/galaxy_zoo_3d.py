@@ -6,14 +6,50 @@ from astropy.io import fits
 
 # TODO(galaxy_zoo_3d): Markdown description  that will appear on the catalog page.
 _DESCRIPTION = """
-Description is **formatted** as markdown.
-
-It should also contain any processing which has been applied (if any),
-(e.g. corrupted example skipped, images cropped,...):
+Dataset containing crowd sourced spatial pixel (spaxel) maps identifying galaxy
+centres, foreground stars, galactic bars and spiral arms in all galaxies in the
+target file for the MaNGA survey. Data comes from the "Galaxy Zoo: 3D" project (
+Masters et al. 2021).
 """
 
 # TODO(galaxy_zoo_3d): BibTeX citation
 _CITATION = """
+@ARTICLE{2021MNRAS.507.3923M,
+       author = {{Masters}, Karen L. and
+                 {Krawczyk}, Coleman and
+                 {Shamsi}, Shoaib and
+                 {Todd}, Alexander and
+                 {Finnegan}, Daniel and
+                 {Bershady}, Matthew and
+                 {Bundy}, Kevin and
+                 {Cherinka}, Brian and
+                 {Fraser-McKelvie}, Amelia and
+                 {Krishnarao}, Dhanesh and
+                 {Kruk}, Sandor and
+                 {Lane}, Richard R.
+                 and {Law}, David and
+                 {Lintott}, Chris and
+                 {Merrifield}, Michael and
+                 {Simmons}, Brooke and
+                 {Weijmans}, Anne-Marie and
+                 {Yan}, Renbin},
+       title = "{Galaxy Zoo: 3D - crowdsourced bar, spiral, and foreground star
+       masks for MaNGA target galaxies}",
+       journal = {MNRAS},
+       keywords = {surveys, methods: data analysis, galaxies: bar, galaxies: spiral,
+       galaxies: structure, Astrophysics - Astrophysics of Galaxies},
+       year = 2021,
+       month = nov,
+       volume = {507},
+       number = {3},
+       pages = {3923-3935},
+       doi = {10.1093/mnras/stab2282},
+       archivePrefix = {arXiv},
+       eprint = {2108.02065},
+       primaryClass = {astro-ph.GA},
+       adsurl = {https://ui.adsabs.harvard.edu/abs/2021MNRAS.507.3923M},
+       adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
 """
 
 
