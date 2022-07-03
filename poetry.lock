@@ -282,6 +282,36 @@ python-versions = "*"
 numpy = "*"
 
 [[package]]
+name = "etils"
+version = "0.6.0"
+description = "Collection of common python utils"
+category = "main"
+optional = false
+python-versions = ">=3.7"
+
+[package.dependencies]
+etils = {version = "*", extras = ["epy"], optional = true, markers = "extra == \"epath\""}
+importlib_resources = {version = "*", optional = true, markers = "extra == \"epath\""}
+typing_extensions = {version = "*", optional = true, markers = "extra == \"epy\""}
+zipp = {version = "*", optional = true, markers = "extra == \"epath\""}
+
+[package.extras]
+all = ["etils", "etils", "etils", "etils", "etils", "etils", "etils", "etils", "etils", "etils", "etils"]
+array-types = ["numpy"]
+dev = ["pytest", "pytest-subtests", "pytest-xdist", "pylint (>=2.6.0)", "yapf", "chex"]
+ecolab = ["jupyter", "numpy", "mediapy", "etils"]
+edc = ["etils"]
+enp = ["numpy", "etils"]
+epath = ["importlib-resources", "zipp", "etils"]
+epath-no-tf = ["etils"]
+epy = ["typing-extensions"]
+etqdm = ["absl-py", "tqdm", "etils"]
+etree = ["etils", "etils", "etils", "etils"]
+etree-dm = ["dm-tree", "etils"]
+etree-jax = ["jax", "etils"]
+etree-tf = ["tf-nightly", "etils"]
+
+[[package]]
 name = "filelock"
 version = "3.3.0"
 description = "A platform independent file lock."
@@ -1392,15 +1422,16 @@ wrapt = ">=1.12.1,<1.13.0"
 
 [[package]]
 name = "tensorflow-datasets"
-version = "4.5.2"
+version = "4.6.0"
 description = "tensorflow/datasets is a library of datasets ready to use with TensorFlow."
 category = "main"
 optional = false
-python-versions = ">=3.6"
+python-versions = ">=3.7"
 
 [package.dependencies]
 absl-py = "*"
 dill = "*"
+etils = {version = "*", extras = ["epath"]}
 importlib-resources = {version = "*", markers = "python_version < \"3.9\""}
 numpy = "*"
 promise = "*"
@@ -1409,16 +1440,19 @@ requests = ">=2.19.0"
 six = "*"
 tensorflow-metadata = "*"
 termcolor = "*"
+toml = "*"
 tqdm = "*"
 typing-extensions = {version = "*", markers = "python_version < \"3.8\""}
 
 [package.extras]
 aflw2k3d = ["scipy"]
+beir = ["apache-beam"]
+ble_wind_field = ["gcsfs", "zarr"]
 c4 = ["apache-beam", "gcld3", "langdetect", "nltk", "tldextract"]
 cats_vs_dogs = ["matplotlib"]
 colorectal_histology = ["pillow"]
 common_voice = ["pydub"]
-dev = ["jax", "jupyter", "pytest", "pytest-xdist", "pandas", "pydub", "apache-beam", "pyyaml", "pylint (>=2.6.0)", "yapf"]
+dev = ["jax", "jupyter", "pytest", "pytest-shard", "pytest-xdist", "pandas", "pydub", "apache-beam", "pyyaml", "pylint (>=2.6.0)", "yapf"]
 duke_ultrasound = ["scipy"]
 eurosat = ["scikit-image", "tifffile", "imagecodecs"]
 groove = ["pretty-midi", "pydub"]
@@ -1436,9 +1470,10 @@ smartwatch_gestures = ["pandas"]
 svhn = ["scipy"]
 tensorflow = ["tensorflow (>=2.1)"]
 tensorflow-data-validation = ["tensorflow-data-validation"]
-tests-all = ["jax", "jupyter", "pytest", "pytest-xdist", "pandas", "pydub", "apache-beam", "pyyaml", "scipy", "gcld3", "langdetect", "nltk", "tldextract", "matplotlib", "pillow", "scikit-image", "tifffile", "imagecodecs", "pretty-midi", "opencv-python", "networkx", "h5py", "envlogger", "mwparserfromhell", "bs4", "lxml", "pycocotools"]
+tests-all = ["jax", "jupyter", "pytest", "pytest-shard", "pytest-xdist", "pandas", "pydub", "apache-beam", "pyyaml", "scipy", "gcsfs", "zarr", "gcld3", "langdetect", "nltk", "tldextract", "matplotlib", "pillow", "scikit-image", "tifffile", "imagecodecs", "pretty-midi", "opencv-python", "networkx", "h5py", "envlogger", "mwparserfromhell", "bs4", "lxml", "pycocotools"]
 the300w_lp = ["scipy"]
 wider_face = ["pillow"]
+wiki_dialog = ["apache-beam"]
 wikipedia = ["mwparserfromhell", "apache-beam"]
 wsc273 = ["bs4", "lxml"]
 youtube_vis = ["pycocotools"]
@@ -1475,7 +1510,7 @@ python-versions = "*"
 name = "toml"
 version = "0.10.2"
 description = "Python Library for Tom's Obvious, Minimal Language"
-category = "dev"
+category = "main"
 optional = false
 python-versions = ">=2.6, !=3.0.*, !=3.1.*, !=3.2.*"
 
@@ -1788,6 +1823,10 @@ dparse = [
 eaglesqltools = [
     {file = "eagleSqlTools-2.0.0-py3-none-any.whl", hash = "sha256:8b925a412e83540b4265c36188c808193cfd93e2c65c2fbf73a15c80286a5395"},
     {file = "eagleSqlTools-2.0.0.tar.gz", hash = "sha256:237bf95a3e91638705ebd73a965071a58191a70fee22948ecd8597e3a2a10fa3"},
+]
+etils = [
+    {file = "etils-0.6.0-py3-none-any.whl", hash = "sha256:e47b14402f2fc883c70a394e86b3236e4929cfd90187fba58d2f4d3eb2e07c05"},
+    {file = "etils-0.6.0.tar.gz", hash = "sha256:6677241051835d0db11c4947bcad938f57b51ea102290624f892f1e4e51b70e5"},
 ]
 filelock = [
     {file = "filelock-3.3.0-py3-none-any.whl", hash = "sha256:bbc6a0382fe8ec4744ecdf6683a2e07f65eb10ff1aff53fc02a202565446cde0"},
@@ -2468,8 +2507,8 @@ tensorflow = [
     {file = "tensorflow-2.6.5-cp39-cp39-win_amd64.whl", hash = "sha256:65e7dffbaa3af99c3d9f02c61a63c1000708ac3f16b1a5417696c54c1c2eadf4"},
 ]
 tensorflow-datasets = [
-    {file = "tensorflow-datasets-4.5.2.tar.gz", hash = "sha256:dc3c44daf2b04af71411138fc8b27447969a8da729f72a70c977d814317f8500"},
-    {file = "tensorflow_datasets-4.5.2-py3-none-any.whl", hash = "sha256:319a0b5ae7c33822de64688105872849d00176ae1dbaef5c4a15d60dbc594de3"},
+    {file = "tensorflow-datasets-4.6.0.tar.gz", hash = "sha256:9da2a65297e981f61c5f1cb45696066b9c4013d97803a6df74382bc24e2137cb"},
+    {file = "tensorflow_datasets-4.6.0-py3-none-any.whl", hash = "sha256:fc1f163668d449cb2280dedc458c25875aa92b665889a394dbd3dcff45978bfa"},
 ]
 tensorflow-estimator = [
     {file = "tensorflow_estimator-2.6.0-py2.py3-none-any.whl", hash = "sha256:cf78528998efdb637ac0abaf525c929bf192767544eb24ae20d9266effcf5afd"},
