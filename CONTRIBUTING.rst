@@ -80,13 +80,13 @@ Install nox-poetry_ to use Poetry_ inside Nox_ sessions.
 
 Install pyenv_ to manage the multiple Python versions supported.
 
-Once pyenv is installed you can install Python versions 3.7, 3.8 and 3.9
+Once pyenv is installed you can install Python versions 3.8, 3.9 and 3.10
 
 .. code:: console
 
-   $ pyenv install 3.7.12
    $ pyenv install 3.8.12
    $ pyenv install 3.9.10
+   $ pyenv install 3.10.1
 
 It is recommended that you create a :code:`.python-version` file in the root directory of
 the project. This will help pyenv determine which Python version to use. The content
@@ -94,15 +94,15 @@ of the file should be:
 
 .. code::
 
+   3.10.1
    3.9.10
    3.8.12
-   3.7.12
 
 Make sure that poetry is using the correct Python version
 
 .. code:: console
 
-   $ poetry env use 3.9
+   $ poetry env use 3.10
 
 Install the package with development requirements:
 
