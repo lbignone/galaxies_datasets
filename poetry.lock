@@ -1407,7 +1407,7 @@ wrapt = ">=1.12.1,<1.13.0"
 
 [[package]]
 name = "tensorflow-datasets"
-version = "4.6.0"
+version = "4.7.0"
 description = "tensorflow/datasets is a library of datasets ready to use with TensorFlow."
 category = "main"
 optional = false
@@ -1437,7 +1437,7 @@ c4 = ["apache-beam", "gcld3", "langdetect", "nltk", "tldextract"]
 cats-vs-dogs = ["matplotlib"]
 colorectal-histology = ["Pillow"]
 common-voice = ["pydub"]
-dev = ["apache-beam", "jax[cpu]", "jupyter", "pandas", "pydub", "pylint (>=2.6.0)", "pytest", "pytest-shard", "pytest-xdist", "pyyaml", "yapf"]
+dev = ["apache-beam", "conllu", "jax[cpu]", "jupyter", "pandas", "pydub", "pylint (>=2.6.0)", "pytest", "pytest-shard", "pytest-xdist", "pyyaml", "yapf"]
 duke-ultrasound = ["scipy"]
 eurosat = ["imagecodecs", "scikit-image", "tifffile"]
 groove = ["pretty-midi", "pydub"]
@@ -1455,7 +1455,7 @@ smartwatch-gestures = ["pandas"]
 svhn = ["scipy"]
 tensorflow = ["tensorflow (>=2.1)"]
 tensorflow-data-validation = ["tensorflow-data-validation"]
-tests-all = ["Pillow", "apache-beam", "bs4", "envlogger", "gcld3", "gcsfs", "h5py", "imagecodecs", "jax[cpu]", "jupyter", "langdetect", "lxml", "matplotlib", "mwparserfromhell", "networkx", "nltk", "opencv-python", "pandas", "pretty-midi", "pycocotools", "pydub", "pytest", "pytest-shard", "pytest-xdist", "pyyaml", "scikit-image", "scipy", "tifffile", "tldextract", "zarr"]
+tests-all = ["Pillow", "apache-beam", "bs4", "conllu", "envlogger", "gcld3", "gcsfs", "h5py", "imagecodecs", "jax[cpu]", "jupyter", "langdetect", "lxml", "matplotlib", "mwparserfromhell", "networkx", "nltk", "opencv-python", "pandas", "pretty-midi", "pycocotools", "pydub", "pytest", "pytest-shard", "pytest-xdist", "pyyaml", "scikit-image", "scipy", "tifffile", "tldextract", "zarr"]
 the300w-lp = ["scipy"]
 wider-face = ["Pillow"]
 wiki-dialog = ["apache-beam"]
@@ -2471,8 +2471,8 @@ tensorflow = [
     {file = "tensorflow-2.6.5-cp39-cp39-win_amd64.whl", hash = "sha256:65e7dffbaa3af99c3d9f02c61a63c1000708ac3f16b1a5417696c54c1c2eadf4"},
 ]
 tensorflow-datasets = [
-    {file = "tensorflow-datasets-4.6.0.tar.gz", hash = "sha256:9da2a65297e981f61c5f1cb45696066b9c4013d97803a6df74382bc24e2137cb"},
-    {file = "tensorflow_datasets-4.6.0-py3-none-any.whl", hash = "sha256:fc1f163668d449cb2280dedc458c25875aa92b665889a394dbd3dcff45978bfa"},
+    {file = "tensorflow-datasets-4.7.0.tar.gz", hash = "sha256:590faf3763bc14757906b36c718389eeded533ee8ae4d030ede140db86aca4cd"},
+    {file = "tensorflow_datasets-4.7.0-py3-none-any.whl", hash = "sha256:5761da58b35a73746f1e522c7184a41ab0acacb8928a9dde6b2f54f77ad45819"},
 ]
 tensorflow-estimator = [
     {file = "tensorflow_estimator-2.6.0-py2.py3-none-any.whl", hash = "sha256:cf78528998efdb637ac0abaf525c929bf192767544eb24ae20d9266effcf5afd"},
