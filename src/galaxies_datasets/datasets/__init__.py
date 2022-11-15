@@ -4,3 +4,4 @@ from .galaxy_zoo_2 import GalaxyZoo2  # noqa: F401
 from .galaxy_zoo_3d import GalaxyZoo3d  # noqa: F401
 from .galaxy_zoo_challenge import GalaxyZooChallenge  # noqa: F401
 from .galaxy_zoo_decals import GalaxyZooDecals  # noqa: F401
+from .gama import Gama  # noqa: F401
