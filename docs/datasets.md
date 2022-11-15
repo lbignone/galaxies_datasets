@@ -123,3 +123,18 @@ them in `manual_dir/galaxy_zoo_decals`. You should end up with with
 four folders structured like this:
 
     gz_decals_dr5_png_part*.zip/J*/J*.png
+
+## gama
+
+**Description**:
+
+Dataset containing SDSS images corresponding to galaxies in the GAMA survey. Sources
+selection is based on Porter-Temple et al. (2022).
+
+**Homepage**: [
+http://www.gama-survey.org/
+](http://www.gama-survey.org/)
+
+**Manual download instructions**:
+Manually extract the data to the `tensorflow_datasets/downloads/manual/GAMA`
+directory
