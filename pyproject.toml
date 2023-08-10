@@ -27,7 +27,7 @@ tensorflow-datasets = "^4.4.0"
 pandas = "^1.3.2"
 tensorflow = "^2.4.0"
 eagleSqlTools = "^2.0.0"
-typer = ">=0.4,<0.8"
+typer = ">=0.4,<0.10"
 Markdown = "3.3.4"
 
 [tool.poetry.dev-dependencies]
