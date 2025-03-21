@@ -72,7 +72,7 @@ _METADATA = {
     "petro_th90": tf.float64,
     "petro_theta": tf.float64,
     "wrong_size_statistic": tf.float64,
-    "wrong_size_warning": tf.bool,
+    "wrong_size_warning": tf.string,
 }
 
 _QUESTIONS = {
