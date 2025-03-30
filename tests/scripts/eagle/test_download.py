@@ -119,8 +119,7 @@ def test_clean_urls():
     clean_urls(data)
     for orientation in EagleOrientation:
         assert data[f"Image_{orientation.value}"].iloc[0] is None
-        assert data[f"Image_{orientation.value}"].iloc[1] == expected
-        
+        assert data[f"Image_{orientation.value}"].iloc[1] == expected        
 
 
 def test_save_dataframe(tmp_path):
