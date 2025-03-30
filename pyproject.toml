@@ -54,9 +54,9 @@ reorder-python-imports = "^3.1.0"
 pre-commit-hooks = "^4.1.0"
 sphinx-rtd-theme = ">=1.0.0"
 sphinx-click = ">=3.0.2"
-Pygments = "^2.12.0"
-myst-parser = "^0.16.1"
-matplotlib = "^3.5.2"
+Pygments = ">=2.12.0"
+myst-parser = ">=0.16.1"
+matplotlib = ">=3.5.2"
 protobuf = ">=3.20.3,<4.21.0"
 
 [tool.poetry.scripts]
